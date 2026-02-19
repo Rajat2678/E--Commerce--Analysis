@@ -1,60 +1,50 @@
-## SQL Data Analysis
+## Excel Data Analysis
 
-This section outlines the approach and key insights derived from analyzing the e-commerce dataset using SQL. The SQL queries executed in this project leverage advanced SQL concepts such as Common Table Expressions (CTEs), subqueries, inner joins, CASE statements, row numbering, and GROUP BY clauses to extract and transform data into valuable insights.
+This section provides a step-by-step guide on how to utilize Excel for analyzing the e-commerce dataset. The analysis includes creating pivot charts based on SQL queries to derive meaningful insights.
 
-### Analysis Goals
+### Steps to Analyze Data in Excel
 
-1. **Credit Limit Analysis**:
-   - Identify customers along with their credit limits to monitor financial exposure and risk.
+1. **Import Data into Excel**:
+   - Export the required data from MySQL by running the necessary SQL queries.
+   - Save the exported data as a CSV file.
+   - Open Excel and import the CSV file.
 
-2. **Late Shipping Analysis**:
-   - Detect customers affected by late shipping to improve delivery processes and customer satisfaction.
+2. **Create Pivot Tables and Pivot Charts**:
+   - **Credit Limit Analysis**:
+     - Insert a Pivot Table to summarize customer credit limits.
+     - Create a Pivot Chart to visualize credit limits across different customer segments.
+   - **Late Shipping Analysis**:
+     - Create a Pivot Table to list customers with late shipments.
+     - Generate a Pivot Chart to show the impact of late shipping on different customers.
+   - **Over Credit Limit Analysis**:
+     - Use a Pivot Table to highlight customers who exceeded their credit limits.
+     - Visualize this data with a Pivot Chart.
+   - **Office Sales by Customer Country**:
+     - Create a Pivot Table to analyze sales data by office and customer country.
+     - Develop a Pivot Chart to display sales distribution across countries.
+   - **Products Purchased Together**:
+     - Insert a Pivot Table to identify frequently bought together products.
+     - Visualize this with a suitable Pivot Chart.
+   - **Sales and Country Overview**:
+     - Generate a Pivot Table to provide an overview of sales by country.
+     - Use a Pivot Chart to present this data visually.
+   - **Sales Value Change from Previous Order**:
+     - Create a Pivot Table to calculate the change in sales value from previous orders.
+     - Visualize these changes with a Pivot Chart.
 
-3. **Over Credit Limit Analysis**:
-   - List customers who have exceeded their credit limit to manage credit risk and ensure timely payments.
+3. **Format Charts and Tables**:
+   - Apply consistent formatting to all charts and tables for better readability.
+   - Use conditional formatting to highlight key metrics and outliers.
 
-4. **Office Sales by Customer Country**:
-   - Analyze sales data categorized by customer country to understand regional performance and strategize market expansion.
+# Snapshot of Excel Workbook 
 
-5. **Products Purchased Together**:
-   - Identify products frequently purchased together to optimize cross-selling strategies and inventory management.
+![Snap 1](https://github.com/pradeeshculer/E-Commerce-Analysis/assets/115096109/5458c5a0-717b-42e0-8167-8b3deea9795e)
 
-6. **Sales and Country Overview**:
-   - Provide an overview of sales performance by country to identify high-performing regions and allocate resources effectively.
+![Snap 2](https://github.com/pradeeshculer/E-Commerce-Analysis/assets/115096109/5a97720d-b001-4263-9389-4325635f9612)
 
-7. **Sales Value Change from Previous Order**:
-   - Calculate the change in sales value from the previous order to track sales trends and identify growth opportunities.
-
-### SQL Concepts Used
-
-- **Common Table Expressions (CTEs)**:
-  - Simplify complex queries by breaking them down into more manageable parts.
-  
-- **Subqueries**:
-  - Extract data needed for further analysis within the main query.
-  
-- **Inner Joins**:
-  - Combine rows from multiple tables based on related columns.
-  
-- **CASE Statements**:
-  - Implement conditional logic within queries to categorize and compute values.
-  
-- **Row Number**:
-  - Assign unique row numbers to result set rows, useful for ranking and limiting results.
-  
-- **GROUP BY Clauses**:
-  - Aggregate data to produce summary statistics such as totals and averages.
-
-### Key Insights
-
-- **Financial Exposure**: The analysis of customer credit limits reveals the overall financial exposure and helps in managing credit risk.
-- **Delivery Performance**: Late shipping analysis highlights areas for improvement in the delivery process, aiming to enhance customer satisfaction.
-- **Credit Risk Management**: Identifying customers who exceed their credit limit assists in mitigating credit risks and ensuring timely payments.
-- **Regional Sales Performance**: Analyzing office sales by customer country provides insights into regional performance, aiding in strategic decision-making.
-- **Cross-Selling Opportunities**: Identifying products frequently purchased together helps in optimizing cross-selling strategies and improving inventory management.
-- **Sales Trends**: An overview of sales by country and changes in sales value from previous orders helps track trends and identify growth opportunities.
+![Snap 3](https://github.com/pradeeshculer/E-Commerce-Analysis/assets/115096109/b2a0bcaf-b85a-44f7-a6a2-75fbf95e8c0e)
 
 ### Conclusion
 
-The SQL analysis performed in this project transforms raw e-commerce data into actionable insights. By leveraging advanced SQL concepts and focusing on key areas such as credit limits, late shipping, regional sales performance, and product bundling, this analysis supports data-driven decision-making and strategic planning. These insights help improve operational efficiency, customer satisfaction, and overall business performance.
+Using Excel for data analysis allows for detailed and interactive exploration of the e-commerce dataset. By following the steps outlined above, you can create comprehensive pivot charts and tables that provide valuable insights into various aspects of the business, from credit limits to sales performance across different countries.
 
